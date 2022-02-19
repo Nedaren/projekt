@@ -59,16 +59,16 @@ public class App  implements Runnable {
 
             apiClient.fetch();
             response = apiClient.getresponse();
-            if (response != null) {
-//                System.out.printf("Current Time: " + localDateTime + "%n");
-//                System.out.printf("Hour: " + hour + "%n");
-                System.out.printf("City: %s%n", response.city);
-                System.out.printf("Latitude: %s%n", response.latitude);
-                System.out.printf("Longitude: %s%n", response.longitude);
-            }
-            else {
-                System.out.printf("Error: %s%n", apiClient.getError());
-            }
+//            if (response != null) {
+////                System.out.printf("Current Time: " + localDateTime + "%n");
+////                System.out.printf("Hour: " + hour + "%n");
+//                System.out.printf("City: %s%n", response.city);
+//                System.out.printf("Latitude: %s%n", response.latitude);
+//                System.out.printf("Longitude: %s%n", response.longitude);
+//            }
+//            else {
+//                System.out.printf("Error: %s%n", apiClient.getError());
+//            }
         } catch (URISyntaxException e) {
             e.printStackTrace();
         } finally {
