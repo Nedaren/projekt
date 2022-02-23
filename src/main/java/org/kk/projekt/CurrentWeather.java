@@ -21,6 +21,7 @@ public class CurrentWeather {
                 if (hour < 3) {
                     n = 3;
                 }
+                // Jeżeli godzina jest mniejsza niż 3, wychodzi błąd ponieważ API nie posiada żadnych danych dla godziny wcześniejszej niż 3:00.
                 else {
                     n = i - 1;
                 }
